@@ -27,9 +27,4 @@ class PendaftaranPrestasi extends Pendaftaran {
     public function tampilkanInfoJalur() {
         return "Prestasi: " . $this->jenisPrestasi . " (" . $this->tingkatPrestasi . ")";
     }
-
-    public function hitungTotalBiaya() {
-    // Mendapatkan potongan Rp 50.000 dari biaya dasar
-    return $this->biayaPendaftaranDasar - 50000;
-    }
 }
