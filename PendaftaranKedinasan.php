@@ -27,4 +27,9 @@ class PendaftaranKedinasan extends Pendaftaran {
     public function tampilkanInfoJalur() {
         return "No SK: " . $this->skIkatanDinas . " | Sponsor: " . $this->instansiSponsor;
     }
+
+    public function hitungTotalBiaya() {
+    // Dikenakan surcharge atau biaya tambahan khusus sebesar 25%
+    return $this->biayaPendaftaranDasar * 1.25;
+    }
 }
